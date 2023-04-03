@@ -90,30 +90,12 @@ class ProfilePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 // HIGHLIGHT
-                HighLight(
-                  titleH: 'Story 1',
-                  picIndex: 67,
-                ),
-                HighLight(
-                  titleH: 'Story 2',
-                  picIndex: 28,
-                ),
-                HighLight(
-                  titleH: 'Story 3',
-                  picIndex: 98,
-                ),
-                HighLight(
-                  titleH: 'Story 4',
-                  picIndex: 55,
-                ),
-                HighLight(
-                  titleH: 'Story 5',
-                  picIndex: 43,
-                ),
-                HighLight(
-                  titleH: 'Story 6',
-                  picIndex: 24,
-                ),
+                HighLight(titleH: 'Story 1', picIndex: 67),
+                HighLight(titleH: 'Story 2', picIndex: 28),
+                HighLight(titleH: 'Story 3', picIndex: 98),
+                HighLight(titleH: 'Story 4', picIndex: 55),
+                HighLight(titleH: 'Story 5', picIndex: 43),
+                HighLight(titleH: 'Story 6', picIndex: 24),
               ],
             ),
           ),
@@ -129,7 +111,46 @@ class ProfilePage extends StatelessWidget {
           ItemPost()
         ],
       ),
+      // BOTTOMNAVBAR
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 4,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
+        backgroundColor: Colors.white,
+        elevation: 0,
+        items: [
+          BottomNavigationBarItem(
+              icon: IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.home_filled),
+              ),
+              label: "home"),
+          BottomNavigationBarItem(
+              icon: IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.search),
+              ),
+              label: "search"),
+          BottomNavigationBarItem(
+              icon: IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.add_box_outlined),
+              ),
+              label: "add"),
+          BottomNavigationBarItem(
+              icon: IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.movie_creation_outlined),
+              ),
+              label: "reels"),
+          BottomNavigationBarItem(
+              icon: IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.person),
+              ),
+              label: "profile"),
+        ],
+      ),
     );
   }
 }
-
