@@ -25,7 +25,7 @@ class ProfilePage extends StatelessWidget {
         title: Row(
           children: [
             Text(
-              "ianmadiana",
+              "johndoe",
               style:
                   TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
             ),

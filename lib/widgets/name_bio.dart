@@ -14,7 +14,7 @@ class NameBio extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Text(
-            "Ian",
+            "John",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
           ),
         ),
